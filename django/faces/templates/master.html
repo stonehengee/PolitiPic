@@ -1,0 +1,414 @@
+{% extends "base.html" %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <!--<![endif]-->
+{% block content %}
+
+
+
+
+
+  <!-- Main Slider -->
+
+  <section id="main-slider" class="main-slider text-center">
+    <div class="head-overlay">
+      <ul class="bxslider">
+        <li>
+          <div class="head-overlay">
+            <img src="static/images/background/trump_obama_large.jpg"/>
+          </div><!-- /.head-overlay -->
+          <div class="slider-text">
+            <div class="slide-inner">
+              <h2 class="slider-title" data-animation="wow animated bounceInDown">Politics  <span>of the face</span></h2>
+              <p class="slide-description">Using facial analysis technology to understand the modern voter</p>
+              <div class="slide-btn-container">
+                <a class="btn" href="{% url 'faces:home' %}">Find your score!</a><br>
+                <a class="btn"style='border:0px' href='https://play.google.com/store/apps/details?id=com.byteacademy.politicalfaces&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="height:50px;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png'/></a>
+              </div><!-- /.slide-btn-container -->
+            </div><!-- /.slide-inner -->
+          </div><!-- /.slider-text -->
+        </li>
+        
+      </ul>
+    </div><!-- /.head-overlay -->
+  </section><!-- /#main-slider --> 
+
+  <!-- Main Slider -->
+<div class="about-top">
+      <div class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="know-about-us wow animated fadeInLeft" data-wow-delay=".5s">
+                <h2 class="section-title"><span>Learning</span> about the American voter</h2><!-- /.section-title -->
+                <p class="description">
+                  The voting public in 2016 is firmly divided. The number of people who are truely independent, those who's vote is honestly up for grab, shrinks every election cycle. This makes it increasingly difficult for people and politicians to engage in honest discussions over policy. Instead they find more success pandering to established, fine tuned partisan messages. Public debate has been replaced with shoring up support.<br><br>
+                  It's  with this in mind that we set out to find a new way to look at voters. With this project we hope to disrupt the two party model of electoral politics in favor of an individualized and issues-based future. 
+                </p><!-- /.description -->
+                <!-- <div class="btn-container"> -->
+                  <!-- <a href="#" class="btn read-more">Learn More</a> -->
+                <!-- </div>/.btn-container -->
+              </div><!-- /.know-about-us -->
+            </div>
+
+            <div class="col-md-6">
+              <div class="our-skills wow animated fadeInRight" data-wow-delay=".5s">
+                <h2 class="section-title"><span>The</span> numbers</h2><!-- /.section-title -->
+                <div class="skill-bars">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                      <span class="skill-name">4</span>Weeks
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                      <span class="skill-name">34</span>Facial Landmarks
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                      <span class="skill-name">39</span>Survey Respondents
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                      <span class="skill-name">Over 10 Million</span>Comparisons
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                      <span class="skill-name">100%</span>Reason to Remember the Name
+                    </div>
+                  </div>
+                </div><!-- /.skill-bars -->
+              </div><!-- /.our-skills -->
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.section-padding -->
+    </div><!-- /.about-top -->
+
+  <!-- Service Section-->
+
+  <section id="services" class="services text-center">
+    <div class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="section-top wow animated fadeInUp" data-wow-delay=".5s">
+            <h2 class="section-title"><span>Technologies</span> we've used</h2>
+            <p class="section-description">
+              Here are some of the technologies that we've incorporated into this project
+            </p><!-- /.section-description -->
+          </div><!-- /.section-top -->
+
+          <div class="section-details">
+            <div class="service-details">
+              <div class="col-md-3 col-sm-6">
+                <div class="item wow animated fadeInLeft" data-wow-delay=".5s">
+                  <div class="item-icon">
+                      <img src="static/images/thumbnail/scipyshiny_small.png">
+                  </div><!-- /.item-icon -->
+                  <div class="item-details">
+                    <h4 class="item-title">SciPy</h4><!-- /.item-title -->
+                    <p class="item-description">
+SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.                    </p><!-- /.item-description -->
+                  </div><!-- /.item-details -->
+                </div><!-- /.item -->
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <div class="item wow animated fadeInLeft" data-wow-delay=".35s">
+                  <div class="item-icon">
+                    <i class="fa fa-eye"></i>
+                  </div><!-- /.item-icon -->
+                  <div class="item-details">
+                    <h4 class="item-title">Google Vision API</h4><!-- /.item-title -->
+                    <p class="item-description">
+                      Google Cloud Vision API enables developers to understand the content of an image by encapsulating powerful machine learning models in an easy to use REST API. It quickly classifies images into thousands of categories, detects individual objects and faces within images, and finds and reads printed words contained within images
+                    </p><!-- /.item-description -->
+                  </div><!-- /.item-details -->
+                </div><!-- /.item -->
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <div class="item wow animated fadeInRight" data-wow-delay=".35s">
+                  <div class="item-icon">
+                      <img src="static/images/thumbnail/python-logo.jpg">
+                  </div><!-- /.item-icon -->
+                  <div class="item-details">
+                    <h4 class="item-title">Python</h4><!-- /.item-title -->
+                    <p class="item-description">
+Python is a programming language that lets you work quickly
+and integrate systems more effectively.                    </p><!-- /.item-description -->
+                  </div><!-- /.item-details -->
+                </div><!-- /.item -->
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <div class="item wow animated fadeInRight" data-wow-delay=".5s">
+                  <div class="item-icon">
+                      <img src="static/images/thumbnail/django.png">
+                  </div><!-- /.item-icon -->
+                  <div class="item-details">
+                    <h4 class="item-title">Django</h4><!-- /.item-title -->
+                    <p class="item-description">
+Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It's free and open source. Ridiculously fast.                    </p><!-- /.item-description -->
+                  </div><!-- /.item-details -->
+                </div><!-- /.item -->
+              </div>
+
+            </div><!-- /.service-details -->
+          </div><!-- /.section-details -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.section-padding -->
+  </section><!-- /#services -->
+
+  <!-- Service Section-->
+
+
+
+  <!-- About Us Section -->
+
+  <section id="about" class="about">
+    
+
+    
+
+    <div class="about-bottom container">
+      <div class="section-padding">
+        <div class="col-sm-6">
+          <div class="tab-image wow animated fadeInLeft" data-wow-delay=".5s">
+            <img class="compass" src="static/images/thumbnail/graph.png" alt="Tab Image">
+          </div><!-- /.tab-image -->
+        </div>
+        <div class="col-sm-6">
+          <div class="about-work wow animated fadeInRight" data-wow-delay=".5s">
+            <h2 class="section-title section-name"><span>How</span> we made this work</h2><!-- /.section-title -->
+            <p class="description">
+            In the book Predisposed, UNL Professor John Hibbing argues that the things that separate liberals and conservatives are not where they live or how they're raised but rather something more fundamental. Indeed this is an emerging cross-sectional field of study between Psychology, Genetics, and Political Science. <a href"http://www.psych.nyu.edu/jost/Jost-Amodio-2012.pdf">In a 2011 review Jost et al. wrote</a> "Many studies involving quite diverse samples and methods suggest that political and religious views reﬂect a reasonably strong genetic basis..."
+            </p>
+            <p class="description">
+              We decided to take it a step further. We wanted to know if you could learn anything about a person's politics by just looking at their face. We surveyed 39 people, mostly in New York City, using the two-dimensional questionnaire from <a href="http://www.politicalcompass.org/">The Political Compass</a>. After receiving their results we ran photos of their faces through Google's Vision API. We ran regressions comparing distances between facial features and their social and economic scores.
+            </p><!-- /.description -->
+          </div><!-- /.about-work -->
+        </div>
+      </div><!-- /.section-padding -->
+    </div><!-- /.about-bottom -->
+  </section><!-- /#about -->
+
+  <!-- About Us Section -->
+
+
+  <div class="clearfix"></div><!-- /.clearfix -->
+
+
+
+  <!-- Subscribe Section -->
+
+  <section id="subscribe-section" class="subscribe-section text-center" data-stellar-background-ratio="0.1" data-stellar-vertical-offset="0">
+    <div class="bg-overlay">
+      <div class="section-padding">
+        <div class="container">
+          <div class="wow animated fadeInUp" data-wow-delay=".5s">
+            <h2 class="section-title" style="color:black;"> <b>Our base data </b></h2><!-- /.section-title -->
+            <p class="section-description" style="color:black;"><b>
+              Using the SciPy libraries, including Pandas and NumPy, we wrote loops that found the euclidean distances between each respondent's 34 identified facial features. That data was run through NumPy's regression functions and then sorted with Pandas to find the most highly correlated relationships. What we found was that the distance between the center of the right eye and its left corner combined with the measurements for the left eye and its pupil were most highly correlated with economic scores. For social scores the bottom of the lower lip and the center of the mouth replaced the right eye distance.</b>
+            </p><!-- /.section-description -->
+
+            <form class="subscribe" method="post">
+              <p class="alert-success"></p>
+              <p class="alert-warning"></p>
+
+              <div class="subscribe-hide">
+                
+                <span id="subscribe-loading" class="btn"> <i class="fa fa-refresh fa-spin"></i> </span>
+                <div class="subscribe-error"></div>
+              </div><!-- /.subscribe-hide -->
+              <div class="subscribe-message"></div>
+            </form><!-- /.subscribe -->
+          </div>
+        </div><!-- /.container -->
+      </div><!-- /.section-padding -->
+    </div><!-- /.bg-overlay -->
+  </section><!-- /#subscribe-section -->
+
+  <!-- Subscribe Section -->
+
+
+
+
+
+
+  <!-- Testimonials Section -->
+
+  <section id="testimonial" class="testimonial text-center" data-stellar-background-ratio="0.1" data-stellar-vertical-offset="0">
+    <div class="pattern-overlay">
+      <div class="section-padding">
+        <div class="container">
+          <div class="section-top wow animated fadeInUp" data-wow-delay=".5s">
+            <h2 class="section-title">Facial Landmarks</h2><!-- /.section-title -->
+          </div><!-- /.section-top -->
+          <div class="section-details wow animated fadeInUp" data-wow-delay=".5s">
+           
+        
+              
+              
+                <li data-target="#testimonial-slider" data-slide-to="1"></li>
+                
+             
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <blockquote class="client-quote">
+                    Google's Vision API returns 34 facial landmarks. We found the distance between each landmark and tried to correlate them with the scores of the person.
+                  </blockquote><!-- /.client-quote -->
+                </div><!-- /.item -->
+                <!-- /.item -->
+              </div>
+            </div><!-- /#testimonial-slider -->
+          </div><!-- /.section-details -->
+        </div><!-- /.container -->
+      </div><!-- /.section-padding -->
+    </div><!-- /.pattern-overlay -->
+  </section><!-- /#testimonial -->
+
+  <!-- Testimonials Section -->
+      <h2 class="section-title container"><span>Developers</span></h2><!-- /.section-title -->
+
+<div class="about-top container">
+      <div class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <div class="our-skills wow animated fadeInLeft" data-wow-delay=".5s">
+                <h2 class="section-title"><span>Eric</span> Stone</h2><!-- /.section-title -->
+                
+                 <img src="static/images/2.jpg">
+              <p class="description">
+                A Queens native, he graduated from Wheaton College, MA in 2014. He followed his passion for progressive politics to southern Brooklyn. It was there he found his true calling in technology. In 2016 he eagerly made a transition to a career as a programmer and enrolled at Byte Academy.<br><br>He can be reached at:  <a href"mailto:stone.ericm@gmail.com">stone.ericm@gmail.com</a>.
+                </p><!-- /.description -->
+              </div><!-- /.know-about-us -->
+            </div>
+            <div class="col-md-half"></div>
+            <div class="col-md-5">
+              <div class="our-skills wow animated fadeInRight" data-wow-delay=".5s">
+                <h2 class="section-title"><span>Shehryar</span> Khan</h2><!-- /.section-title -->
+               
+                  
+                  <img src="static/images/1.jpg">
+                  <p class="description">
+                Also a Queens native, he grew up taking apart the things around him to discover how they worked. This fascination led him to graduate with a degree in Computer Science from Hunter College CUNY last December. His love for constantly learning and improving himself led him to enroll at Byte Academy in February 2016.<br><br>He can be reached at:  <a href"mailto:skhan8525@gmail">skhan8525@gmail.com</a>.
+                </p><!-- /.description -->
+
+                  
+                    
+                  
+                  
+                  
+                </div><!-- /.skill-bars -->
+              </div><!-- /.our-skills -->
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.section-padding -->
+    </div><!-- /.about-top -->
+
+
+<!-- graph -->
+
+
+
+<!-- graph ends -->
+
+
+
+  <!-- Footer Section -->
+
+  <footer id="colophon" class="footer site-footer" role="contentinfo">
+
+  
+
+
+    <div class="footer-top">
+      <div class="section-padding">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-2">
+              <div class="widget widget_menu">
+                
+                  </nav>
+                </div><!-- /.widget-details -->
+              </div><!-- /.widget -->
+            </div>
+
+            
+                  </div><!-- /.title-list -->
+                </div><!-- /.widget-details -->
+              </div><!-- /.widget -->
+            </div>
+
+                 
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-menu pull-left">
+          <div class="widget widget_menu">
+            <nav class="widget-menu">
+              
+
+
+            </nav>
+          </div><!-- /.widget -->
+        </div><!-- /.footer-menu -->
+
+        
+
+      </div><!-- /.container -->
+    </div><!-- /.footer-bottom -->
+  </footer><!-- /#colophon -->
+
+  <!-- Footer Section -->
+
+  <div id="scroll-to-top" class="scroll-to-top">
+    <span>
+      <i class="fa fa-chevron-up"></i>    
+    </span>
+  </div><!-- /#scroll-to-top -->
+
+
+
+
+  <!-- Include jQuery Js -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include jQuery Js -->
+  <script>window.jQuery || document.write('<script src="static/js/jquery-1.11.2.min.js"><\/script>')</script>
+  <!-- Include WOW Min Js -->
+  <script src="static/js/wow.min.js"></script>
+
+  <!-- Include Waypoint Js -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <!-- Include Ajax MailChimp Js -->
+  <script src="static/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Include Custom Js </-->
+  <script src="static/js/custom.min.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-63948535-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script>
+    $(".bxslider").bxSlider({auto:!0,preloadImages:"all",mode:"horizontal",captions:!1,controls:!0,pause:4000,speed:1200,onSliderLoad:function(){$(".bxslider>li .slide-inner").eq(1).addClass("active-slide"),$(".slide-inner.active-slide .slider-title").addClass("wow animated bounceInDown"),$(".slide-inner.active-slide .slide-description").addClass("wow animated bounceInRight"),$(".slide-inner.active-slide .btn").addClass("wow animated zoomInUp")},onSlideAfter:function(e,i,n){console.log(n),$(".active-slide").removeClass("active-slide"),$(".bxslider>li .slide-inner").eq(n+1).addClass("active-slide"),$(".slide-inner.active-slide").addClass("wow animated bounceInRight")},onSlideBefore:function(){$(".slide-inner.active-slide").removeClass("wow animated bounceInRight"),$(".one.slide-inner.active-slide").removeAttr("style")}}),$(document).ready(function(){function e(){return"ontouchstart"in document.documentElement}function i(){if("undefined"!=typeof google){var i={center:[-37.817331,144.955652],zoom:15,mapTypeControl:!0,mapTypeControlOptions:{style:google.maps.MapTypeControlStyle.DROPDOWN_MENU},navigationControl:!0,scrollwheel:!1,streetViewControl:!0};e()&&(i.draggable=!1),$("#googleMaps").gmap3({map:{options:i},marker:{latLng:[23.709921,90.407143],options:{icon:"static/images/mapicon.png"}}})}}$("#masthead #main-menu").onePageNav(),i()}),$("#contactform").on("submit",function(e){e.preventDefault(),$this=$(this),$.ajax({type:"POST",url:$this.attr("action"),data:$this.serialize(),success:function(){alert("Message Sent Successfully")}})});
+  </script>
+{% endblock %}

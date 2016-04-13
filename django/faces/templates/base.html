@@ -1,0 +1,74 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="static/images/logo.png">
+	<meta charset="UTF-8">
+  <title>PolitiPic</title>
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="static/js/django_ajax.js"></script>
+	<script src="static/js/dropzone.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="static/js/main.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Polmo - One Page HTML5 Template By Jewel Theme">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- Include Bootstrap Css -->
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+  <!-- Include Bootstrap Min Css -->
+  <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+  <!-- Include Animate Min Css -->
+  <link rel="stylesheet" href="static/css/animate.min.css">
+  <!-- Include Fontawesome Min Css -->
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <!-- Include Magnific PopUp Css -->
+  <link rel="stylesheet" href="static/css/magnific-popup.css">
+  <!-- bxSlider CSS file -->
+  <link href="static/css/jquery.bxslider.css" rel="stylesheet" />
+  <!-- Include Style Css -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- Include Responsive Css -->
+  <link rel="stylesheet" href="static/css/responsive.min.css">
+  <!-- Include Modernizer Js -->
+  <script src="static/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+</head>
+
+  <header id="masthead" class="masthead navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+          <i class="fa fa-bars"></i>
+        </button>
+        
+        <a class="navbar-brand" href="./"><img src="static/images/logo.png" alt="Site Logo" style="height:30px"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <nav id="main-menu" class="collapse navbar-collapse pull-right">
+        <ul class="nav navbar-nav">
+
+<!--           <li class="active"><a href="#main-slider">Home</a></li>
+ -->          <li class="active"><a href="{% url 'faces:home' %}">Find your score</a></li>
+
+
+        </ul>
+      </nav><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </header><!-- /#masthead -->
+<body>
+
+
+		{% block content %}
+
+		{% endblock content %}
+	
+</body>
+</html>

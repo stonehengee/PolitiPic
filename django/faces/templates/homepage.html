@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class= "container">
+<div class ="submitpic" style="padding-bottom:10px;">
+
+    <form name='pictures' action = '{% url "main:submit" %}' method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{forms}}
+     <input id ="submit" type="submit" value="submit" style="width:100px;">
+<div class="instructions">
+     <div>Step 1: Pick an image of a face to test</div>
+     <div>Step 2: Submit the image</div>
+    <div>Step 3: Our custom algorithm, with the assistance <br>
+      of Google's Vision API, will analyze the face, <br>
+      identify 34 distinct landmarks and return a<br> 
+      prediction of the person's economic and social views.</div>
+      <br><br>
+      <div>For more information about your score, go to <a href="https://www.politicalcompass.org/analysis2">The Political Compass</a>.</div>
+    <div></div>
+
+    </div>
+    </form>
+</div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data =  google.visualization.arrayToDataTable
+            ([['X', 'Y', {'type': 'string', 'role': 'style'},{'type': 'string', 'role': 'tooltip'}],
+              [{{econ}}, {{social}},'point { size: 10; shape-type: star; fill-color: #a52714; }','Your score'],
+              [1, 9.8, null,'Adolf Hitler'],
+              [8, 9, null,' Donald Trump'],
+              [8, 8.5, null,'Jeb Bush'],
+              [8.5, 8.5, null,' Ted Cruz'],
+              [9, 7.5, null,' Marco Rubio'],
+              [7, 4, null, 'Hillary Clinton'],
+              [-2, 0, null, 'Bernie Sanders'],
+              [-6, -4, null, 'Mahatma Gandhi'],
+              [7, -2, null, 'Milton Friedman'],
+
+        ]);
+
+        var options = {
+          legend: 'none',
+          hAxis: { title:'Libertarian',minValue: -10, maxValue: 10 },
+          vAxis: { title:'Left',minValue: -10, maxValue: 10 },
+          title: "Authoritarian",
+          curveType: 'function',
+          pointSize: 7,
+          dataOpacity: 0.3,
+          fontSize: 20
+        };
+
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+              movingAuthoritarian();
+
+
+    }
+    var movingAuthoritarian = function(){
+    $('text:contains("Authoritarian")').attr("text-anchor", "middle")
+    $('text:contains("Authoritarian")').attr("x", "400")
+    $('text:contains("Authoritarian")').attr("font-weight", "")
+    $('text:contains("Authoritarian")').attr("font-style", "italic")
+    // $('svg:nth-child(4)').append("<text text-anchor='middle' x='59' y='900' font-family='Arial' font-size='20' font-style='italic' transform='rotate(-90 59 250.5)' stroke='none' stroke-width='0' fill='#222222'>Right</text><path d='M41.99999999999999,405L42.00000000000001,96L62.00000000000001,96L61.99999999999999,405Z' stroke='none' stroke-width='0' fill-opacity='0' fill='#ffffff'></path>")
+  }
+    </script>
+
+    
+
+<div id = "chart_div" style="width:800px; height:500px; margin: 0px;"></div>
+
+</div>
+
+{% endblock %}
