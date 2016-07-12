@@ -720,12 +720,12 @@ button:focus {
 /* 12 -------- Blog Posts Page Styles ---------*/
 
 .page-head {
-    background: url(../../images/background/blog.jpg) no-repeat center top fixed;
+    background: url(../images/background/blog.jpg) no-repeat center top fixed;
     background-size: cover;
     color: #ffffff;
 }
 .head-overlay {
-    background: url(../../images/head-overlay.png);
+    background: url(../images/head-overlay.png);
 }
 .page-head .page-title {
     font-family: 'Belgrano';
