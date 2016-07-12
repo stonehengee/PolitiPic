@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 
-SECRET_KEY = '6&xc0_i%6#xtvhh_2j@3)@rqrm76rku8g=std+4b16qm)f(lzz'
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 here = lambda *dirs: os.path.join(os.path.abspath(os.path.dirname(__file__)), *dirs)
 BASE_DIR = here("..", "..")
@@ -131,4 +129,4 @@ STATICFILES_DIRS =[
     os.path.join(BASE_DIR, "static")
 ]
 
-#from .local_settings import *
+from .local_settings import *

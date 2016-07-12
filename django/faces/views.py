@@ -100,7 +100,6 @@ ssource env...
 python3 manage.py collectstatic
 service apache2 restart
 tail /var/log/apache2/error.log
-password: tomiscool
 passwd - change password
 scp -P 13022 projects@byteprojects.co:/var/www/jng_phase3_final/django/faces/imageToSave.png ~/Desktop/saved.png
 '''
