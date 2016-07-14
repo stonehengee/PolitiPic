@@ -56,7 +56,7 @@ class RunTests():
 							positionc = data['landmarks'][x]['position']['z']
 							positionc = positionc*l
 						else:
-							print('twinnies')
+							# print('twinnies')
 							positiona = positionx
 							positionb = positiony
 							positionc = positionz
@@ -146,7 +146,7 @@ class ApiCall():
 		a = (positiona,positionb,positionc)
 		b = (positionx,positiony,positionz)
 		dst = distance.euclidean(a,b)
-		print(type_,type_2)
+		# print(type_,type_2)
 		
 
 	#	FOR social
@@ -172,7 +172,7 @@ class ApiCall():
 		a = (positiona,positionb,positionc)
 		b = (positionx,positiony,positionz)
 		dst2 = distance.euclidean(a,b)
-		print(type_,type_2)
+		# print(type_,type_2)
 		self.sum_s = (dst + dst2)
 
 	# ---------------------------------------------------------------------------
@@ -201,7 +201,7 @@ class ApiCall():
 		a = (positiona,positionb,positionc)
 		b = (positionx,positiony,positionz)
 		dst = distance.euclidean(a,b)
-		print(type_,type_2)
+		# print(type_,type_2)
 		
 
 	# for economic
@@ -227,16 +227,19 @@ class ApiCall():
 		a = (positiona,positionb,positionc)
 		b = (positionx,positiony,positionz)
 		dst2 = distance.euclidean(a,b)
-		print(type_,type_2)
+		# print(type_,type_2)
 		self.sum_e = (dst + dst2)
-		self.graph()
+		# print ("hit compare")
+		return self.graph()
 
 	def graph(self):
 		# economic graph
 		# y=mx+b
+		# print("How many times are we hitting this?")
 		predicted_econ = -0.1736911*self.sum_e + -0.9262656
 		predicted_soc = -0.0635138*self.sum_s + -2.0714823
 		values = [predicted_econ,predicted_soc]
+		# print("hit graph", values)
 		return values 
 
 		# return HttpResponse(values)
@@ -269,7 +272,9 @@ class ApiCall():
 		# print (response)
 		# exit()
 		# try :
-		your_face = response['responses'][0]['faceAnnotations'][0]
-		self.compare(your_face)
-		# except:
-			# print('now you fucked up')
+		try:
+			your_face = response['responses'][0]['faceAnnotations'][0]
+		except KeyError:
+			return ["There was an issue with your photo.", "Please try again later."]
+		# print ("run hit")
+		return self.compare(your_face)

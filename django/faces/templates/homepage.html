@@ -16,7 +16,7 @@
       identify 34 distinct landmarks and return a<br> 
       prediction of the person's economic and social views.</div>
       <br><br>
-      <div>For more information about your score, go to <a href="https://www.politicalcompass.org/analysis2">The Political Compass</a>.</div>
+      <div>For more information about your score, go to <a href='{{ polcomp }}'> The Political Compass</a>.</div>
     <div></div>
 
     </div>
@@ -64,14 +64,13 @@ google.charts.load('current', {'packages':['corechart']});
     $('text:contains("Authoritarian")').attr("x", "400")
     $('text:contains("Authoritarian")').attr("font-weight", "")
     $('text:contains("Authoritarian")').attr("font-style", "italic")
-    // $('svg:nth-child(4)').append("<text text-anchor='middle' x='59' y='900' font-family='Arial' font-size='20' font-style='italic' transform='rotate(-90 59 250.5)' stroke='none' stroke-width='0' fill='#222222'>Right</text><path d='M41.99999999999999,405L42.00000000000001,96L62.00000000000001,96L61.99999999999999,405Z' stroke='none' stroke-width='0' fill-opacity='0' fill='#ffffff'></path>")
-  }
-    </script>
 
-    
+    }
+    </script>
 
 <div id = "chart_div" style="width:800px; height:500px; margin: 0px;"></div>
 
 </div>
+<link rel="stylesheet" href="static/css/responsive.css">
 
 {% endblock %}

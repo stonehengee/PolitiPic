@@ -9,10 +9,16 @@ from faces.master import ApiCall
 import base64
 # import PIL
 import io
+import os
 # import pprint
 from django.conf import settings
 
 # import pudb
+
+class master(View):
+    template='master.html'
+    def get(self,request):
+        return render(request, self.template, {})
 
 class homepage(View):
     api = ApiCall()
@@ -20,7 +26,9 @@ class homepage(View):
 
     template='homepage.html'
     def get(self,request):
-        context={'forms':UploadFileForm()}
+        context={'forms':UploadFileForm(),
+                 'polcomp':"https://www.politicalcompass.org/analysis2",
+        }
         return render(request,self.template, context)
     def post(self,request):
 
@@ -28,7 +36,7 @@ class homepage(View):
         form = UploadFileForm(request.POST, request.FILES)
         # print (request.FILES['file'].values())
         # print (vars(request.FILES).keys())
-        print(request.FILES)
+        # print(request.FILES)
         if form.is_valid():
 
             img = request.FILES['file']
@@ -39,6 +47,7 @@ class homepage(View):
                 'econ':api[0],
                 'social':api[1],
                 'forms':UploadFileForm(),
+                'polcomp':"https://www.politicalcompass.org/analysis2?ec=" + str(api[0]) + "&soc=" + str(api[1])
             }
 
         else:
@@ -70,13 +79,15 @@ def appcall(request):
     fh.close()
     fh = open('imageToSave.png', 'rb')
     api.picture=fh
-    api.run()
-    api = api.graph()
-    print(api[0])
-    print(api[1])
+    resp = api.run()
+    os.remove("imageToSave.png")
+    # print (api)
+    # api = api.graph()
+    # print(api[0])
+    # print(api[1])
     context={
-        'econ':api[0],
-        'social':api[1],
+        'econ':resp[0],
+        'social':resp[1],
     }
     return JsonResponse(context)
         
@@ -84,15 +95,14 @@ def appcall(request):
 
 
 
-class master(View):
-    template='master.html'
-    def get(self,request):
-        return render(request, self.template, {})
 
-class score(View):
-    template='homepage.html'
-    def post(self,request):
-        api.graph()
+
+# class score(View):
+#     api = ApiCall()
+#     template='homepage.html'
+   
+#     def post(self,request):
+#         api.graph()
 '''
 ssh projects@byteprojects.co -p 13022
 sudo su

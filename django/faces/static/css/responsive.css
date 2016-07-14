@@ -809,101 +809,8 @@
         bottom: 45px;
     }
 }
-@media screen and (min-width: 321px) and (max-width: 360px) {
-    #masthead {
-        background: #000;
-    }
-    .btn,
-    .itemFilter a {
-        padding: 8px 15px;
-    }
-    #main-slider {
-        height: 50px;
-    }
-    .bx-wrapper {
-        display: none;
-    }
-    .section-title {
-        font-size: 1.5em;
-        padding-bottom: 0px;
-    }
-    .section-description {
-        font-size: .875em;
-    }
-    .subscribe-section .section-description,
-    .portfolio-bottom .section-description {
-        padding: 0px;
-    }
-    .bx-wrapper .bx-next {
-        right: 2%;
-    }
-    .bx-wrapper .bx-prev {
-        left: 2%;
-    }
-    .section-padding {
-        padding: 35px 0px;
-    }
-    .about-breifing .item {
-        padding: 0px 10%;
-    }
-    .latest-projects .btn-container,
-    .blog .btn-container {
-        padding-top: 30px;
-    }
-    #subscribe-submit {
-        margin-top: 20px;
-        margin-left: 0px;
-    }
-    .entry-title {
-        font-size: 1.25em;
-        padding-bottom: 5px;
-    }
-    .post-head .entry-date {
-        padding: 10px;
-    }
-    .testimonial .section-padding {
-        padding: 30px 0px 60px 0px;
-    }
-    .testimonial-slider .carousel-indicators {
-        bottom: -35px;
-    }
-    .google-map-container {
-        height: 300px;
-    }
-    .contactform input,
-    .contactform textarea {
-        min-width: inherit;
-    }
-    .footer-social .col-xs-4 {
-        width: 100%;
-    }
-    .page-head .page-title {
-        font-size: 1.5em;
-    }
-    .breadcrumb li {
-        padding: 15px 8px;
-    }
-    .post-head .media-body {
-        padding-left: 15px;
-    }
-    .widget-menu {
-        padding-bottom: 20px;
-        text-align: center;
-    }
-    .widget #subscribe-submit {
-        margin: 0px;
-        top: 2px;
-        right: 2px;
-    }
-    .scroll-to-top {
-        font-size: 1.15em;
-        height: 30px;
-        width: 30px;
-        line-height: 30px;
-        right: 25px;
-        bottom: 45px;
-    }
-}
+
+
 @media screen and (max-width: 320px) {
     #masthead {
         background: #000;
@@ -1001,4 +908,97 @@
         right: 25px;
         bottom: 45px;
     }
+}
+#masthead {
+    background: #000;
+}
+.btn,
+.itemFilter a {
+    padding: 8px 15px;
+}
+#main-slider {
+    height: 50px;
+}
+.bx-wrapper {
+    display: none;
+}
+.section-title {
+    font-size: 1.5em;
+    padding-bottom: 0px;
+}
+.section-description {
+    font-size: .875em;
+}
+.subscribe-section .section-description,
+.portfolio-bottom .section-description {
+    padding: 0px;
+}
+.bx-wrapper .bx-next {
+    right: 2%;
+}
+.bx-wrapper .bx-prev {
+    left: 2%;
+}
+.section-padding {
+    padding: 35px 0px;
+}
+.about-breifing .item {
+    padding: 0px 10%;
+}
+.latest-projects .btn-container,
+.blog .btn-container {
+    padding-top: 30px;
+}
+#subscribe-submit {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.entry-title {
+    font-size: 1.25em;
+    padding-bottom: 5px;
+}
+.post-head .entry-date {
+    padding: 10px;
+}
+.testimonial .section-padding {
+    padding: 30px 0px 60px 0px;
+}
+.testimonial-slider .carousel-indicators {
+    bottom: -35px;
+}
+.google-map-container {
+    height: 300px;
+}
+.contactform input,
+.contactform textarea {
+    min-width: inherit;
+}
+.footer-social .col-xs-4 {
+    width: 100%;
+}
+.page-head .page-title {
+    font-size: 1.5em;
+}
+.breadcrumb li {
+    padding: 15px 8px;
+}
+.post-head .media-body {
+    padding-left: 15px;
+}
+.widget-menu {
+    padding-bottom: 20px;
+    text-align: center;
+}
+.widget #subscribe-submit {
+    margin: 0px;
+    top: 2px;
+    right: 2px;
+}
+.scroll-to-top {
+    font-size: 1.15em;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    right: 25px;
+    bottom: 45px;
 }
