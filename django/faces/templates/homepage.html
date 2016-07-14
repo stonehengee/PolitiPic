@@ -29,16 +29,19 @@ google.charts.load('current', {'packages':['corechart']});
       function drawChart() {
         var data =  google.visualization.arrayToDataTable
             ([['X', 'Y', {'type': 'string', 'role': 'style'},{'type': 'string', 'role': 'tooltip'}],
-              [{{econ}}, {{social}},'point { size: 10; shape-type: star; fill-color: #a52714; }','Your score'],
               [1, 9.8, null,'Adolf Hitler'],
               [8, 9, null,' Donald Trump'],
               [8, 8.5, null,'Jeb Bush'],
               [8.5, 8.5, null,' Ted Cruz'],
+                          {% if econ %}
+              [{{econ|floatformat:2}}, {{social|floatformat:2}},'point { size: 10; shape-type: star; fill-color: #a52714; }','Your score'],
+            {% endif %}
               [9, 7.5, null,' Marco Rubio'],
               [7, 4, null, 'Hillary Clinton'],
               [-2, 0, null, 'Bernie Sanders'],
               [-6, -4, null, 'Mahatma Gandhi'],
               [7, -2, null, 'Milton Friedman'],
+
 
         ]);
 
