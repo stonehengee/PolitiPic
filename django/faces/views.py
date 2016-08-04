@@ -103,13 +103,3 @@ def appcall(request):
    
 #     def post(self,request):
 #         api.graph()
-'''
-ssh projects@byteprojects.co -p 13022
-sudo su
-ssource env...
-python3 manage.py collectstatic
-service apache2 restart
-tail /var/log/apache2/error.log
-passwd - change password
-scp -P 13022 projects@byteprojects.co:/var/www/jng_phase3_final/django/faces/imageToSave.png ~/Desktop/saved.png
-'''
