@@ -5,6 +5,7 @@ django/faces/to_be_deleted/
 .sync/
 .sync_
 .DS_Store
+byteprojects instructions
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
