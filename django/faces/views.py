@@ -51,8 +51,7 @@ class homepage(View):
             }
 
         else:
-            print('bad news is bad')
-
+            return self.get(request)
         return render(request, self.template, context)
 
 def appcall(request):
